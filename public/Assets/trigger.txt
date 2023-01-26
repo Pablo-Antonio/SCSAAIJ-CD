@@ -1,0 +1,21 @@
+//Trigger cuando NO se realiza un dictamen
+DELIMITER $$
+CREATE TRIGGER completar_after_update 
+AFTER UPDATE
+ON asistencias FOR EACH ROW
+BEGIN  
+ IF NEW.status = 0 THEN
+ INSERT INTO historial (idAsistencia)
+ VALUES (NEW.idAsistencia);
+ END IF;
+END;$$
+
+//TRIGGER FALLIDO
+//cuando se realiza un dictamen 
+DELIMITER $$
+CREATE TRIGGER dictamen_after_insert
+AFTER INSERT
+ON historial FOR EACH ROW
+BEGIN  
+ update asistencias set status = 2 where idAsistencia = NEW.idAsistencia;
+END;$$

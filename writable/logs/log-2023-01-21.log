@@ -1,0 +1,183 @@
+CRITICAL - 2023-01-21 03:24:51 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-01-21 03:25:13 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-01-21 02:46:31 --> Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-21 04:00:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) NOT NULL DEFAULT 1,
+	`fechaSoli` DATETIME NOT NULL,
+	`status` INT(0,1) NOT...' at line 7 in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `A...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `A...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `A...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `A...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-034320_Asistencias.php(50): CodeIgniter\Database\Forge->createTable('Asistencias')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Asistencias->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:12:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) NOT NULL DEFAULT 1,
+	`fechaSoli` TIMESTAMP NOT NULL,
+	`status` INT(0,1) NO...' at line 7 in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `A...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `A...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `A...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `A...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-034320_Asistencias.php(50): CodeIgniter\Database\Forge->createTable('Asistencias')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Asistencias->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:17:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0,1) NOT NULL DEFAULT 1,
+	`fechaSoli` DATETIME NOT NULL,
+	`status` ENUM(0,1) ...' at line 7 in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `A...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `A...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `A...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `A...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-034320_Asistencias.php(50): CodeIgniter\Database\Forge->createTable('Asistencias')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Asistencias->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:20:42 --> mysqli_sql_exception: Unknown table 'scsaaij-cd.usuario' in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `usu...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `usu...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `usu...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `usu...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-034320_Asistencias.php(56): CodeIgniter\Database\Forge->dropTable('usuario')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Asistencias->down()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:30:47 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(46): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:33:29 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(46): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:35:14 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(46): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:39:44 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(46): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:41:25 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(46): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-21 04:42:05 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(47): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-21 04:45:08 --> mysqli_sql_exception: Can't create table `scsaaij-cd`.`historial` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `H...', 0)
+#1 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `H...')
+#2 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `H...')
+#3 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `H...')
+#4 C:\xampp\htdocs\SCSAAIJ-CD\app\Database\Migrations\2023-01-21-042131_Historial.php(48): CodeIgniter\Database\Forge->createTable('Historial')
+#5 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Historial->up()
+#6 C:\xampp\htdocs\SCSAAIJ-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\SCSAAIJ-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\SCSAAIJ-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\SCSAAIJ-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

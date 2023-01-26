@@ -1,0 +1,69 @@
+CRITICAL - 2023-01-24 03:00:54 --> Cannot use object of type CodeIgniter\I18n\Time as array
+in APPPATH\Controllers\IndexController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndexController->nuevaAsistencia()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 03:32:55 --> Undefined array key "id"
+in APPPATH\Controllers\AsistenciasController.php on line 27.
+ 1 APPPATH\Controllers\AsistenciasController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\AsistenciasController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 03:36:49 --> Undefined array key "id"
+in APPPATH\Controllers\AsistenciasController.php on line 27.
+ 1 APPPATH\Controllers\AsistenciasController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\AsistenciasController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 03:37:07 --> Undefined array key "id"
+in APPPATH\Controllers\AsistenciasController.php on line 27.
+ 1 APPPATH\Controllers\AsistenciasController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\AsistenciasController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 03:37:31 --> Undefined array key "id"
+in APPPATH\Controllers\AsistenciasController.php on line 27.
+ 1 APPPATH\Controllers\AsistenciasController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\AsistenciasController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 04:36:00 --> Invalid file: "modals/dictamen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/dictamen.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('modals/dictamen', [], true)
+ 3 APPPATH\Controllers\AsistenciasController.php(17): view('modals/dictamen')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 04:36:05 --> Invalid file: "modals/dictamen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/dictamen.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('modals/dictamen', [], true)
+ 3 APPPATH\Controllers\AsistenciasController.php(17): view('modals/dictamen')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 04:36:25 --> Invalid file: "modals/dictamen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/dictamen.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('modals/dictamen', [], true)
+ 3 APPPATH\Controllers\AsistenciasController.php(17): view('modals/dictamen')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenciasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
